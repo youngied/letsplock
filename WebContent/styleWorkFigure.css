@@ -1,0 +1,114 @@
+@CHARSET "UTF-8";
+
+
+.work figure {
+    float:left;
+  width:calc(100% / 4 - 30px);
+    height:auto;
+    line-height:auto;
+    position: relative;
+    padding: 0 !important;
+    margin: 15px;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+  -webkit-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.2);
+  -moz-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.2);
+  box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.2);
+  background-color:#FFF;
+}
+
+.work figure.white dl{
+    background: #FFF;
+}
+
+
+.work figure a img {
+    height: 90%;
+    width: 90%;
+  margin-left:5%;
+  margin-top:5%;
+}
+
+.work figure dl {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    padding: 10px;
+    margin: 0;
+    line-height: 2.5; 
+    color: white;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+}
+
+.work figure:hover dl {
+    opacity: 1;
+}
+
+.work figure dl dt {
+  font-family: Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 13px;
+    margin-bottom:0;
+  font-weight:600;
+  width:80%;
+  margin-left:10%;
+  color:#666;
+  text-align:left;
+  height:20px;
+  line-height:100%;
+  margin-top:40px;
+
+}
+
+.work figure dl dd {
+    margin-left: 0;
+  font-family: Helvetica, sans-serif;
+    font-size: 12px;
+  font-weight:400;
+  -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  line-height:150%;
+  color:#999;
+  width:80%;
+  margin-left:10%;
+  text-align:left;
+  
+}
+
+/* plock adding*/
+
+figure form{
+    height: 90%;
+    width: 90%;
+  margin-left:5%;
+  margin-top:5%;
+  text-decoration:none; 
+}
+
+@media only screen and (max-width: 1200px) {
+.work figure {
+  width:calc(100% / 3 - 30px);
+}
+}
+@media only screen and (max-width: 740px) {
+.work figure {
+  width:calc(100% / 2 - 30px);
+}
+}
+
+@media only screen and (max-width: 480px) {
+  .work figure {
+  width:calc(100% - 30px);
+}
+}
